@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITABLE resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-builder">
+        <!-- Form to Capture User Input -->
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <h2>Education</h2>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" required>
+
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" required>
+
+            <label for="graduation-year">Graduation Year:</label>
+            <input type="month" id="graduation-year" required>
+
+            <h2>Work Experience</h2>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" required>
+
+            <label for="work-years">Years Worked:</label>
+            <input type="number" id="work-years" required>
+
+            <h2>Skills</h2>
+            <label for="skills">List your skills (comma-separated):</label>
+            <input type="text" id="skills" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Container for the Dynamically Generated Resume -->
+        <div id="generated-resume" class="resume"></div>
+        <!-- Button to toggle edit mode -->
+        <button id="edit-resume" style="display: none;">Edit Resume</button>
+        <button id="save-resume" style="display: none;">Save Changes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
